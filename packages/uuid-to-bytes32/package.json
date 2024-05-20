@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert uuid to bytes32",
   "license": "MIT",
   "main": "dist/index.js",
@@ -20,7 +20,9 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "ethers": "^6.12.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -52,9 +54,6 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "ethers": "^6.12.1"
   },
   "keywords": [
     "uuid",
