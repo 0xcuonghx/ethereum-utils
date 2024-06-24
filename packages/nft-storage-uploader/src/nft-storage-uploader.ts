@@ -37,7 +37,7 @@ export class NftStorageUploader {
           throw Error('File not found');
         }
 
-        throw 'Unsupported';
+        contents = Buffer.from(await response.arrayBuffer());
       } else {
         contents = await readFile(fileOrPath);
       }
